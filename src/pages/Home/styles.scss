@@ -1,0 +1,14 @@
+.page--home {
+  display: flex;
+  height: calc(100vh - 60px);
+
+  .users {
+    width: 400px;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+
+  .images {
+    flex-grow: 1;
+  }
+}

@@ -1,0 +1,17 @@
+.users {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: #1F1E29;
+
+  &__search {
+    margin-bottom: 10px;
+  }
+
+  &__notice {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+  }
+}

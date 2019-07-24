@@ -1,0 +1,31 @@
+.user-list {
+  overflow-y: auto;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    height: 50px;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;    
+
+    &:hover {
+      background-color: rgba(107, 13, 0, 0.4);
+    }
+
+    &.active {
+      background-color: #6B0D00;
+    }
+
+    .avatar {
+      width: 30px;
+      height: 30px;
+      border-radius: 5px;
+    }
+
+    .name {
+      margin-left: 10px;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  background-color: #070707;
+  padding: 0 30px;
+
+  .credit a {
+    color: #6B0D00;
+  }
+
+  .social .social-icon {
+    height: 70%;
+
+    &:not(:last-child) {
+      margin-right: 5px;
+    }
+  }
+}
