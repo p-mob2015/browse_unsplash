@@ -13,7 +13,7 @@ export function* loadImages({ params }) {
     });
     yield put({ type: SET_IMAGES_LOAD_PARAMS, params });
 
-    if (res.length === 0) {
+    if (res.length < params['per_page']) {
       yield put({ type: SET_IMAGES_HAS_MORE, hasMore: false });
     }
   } catch (error) {
