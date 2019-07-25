@@ -31,12 +31,12 @@ class Images extends React.Component {
   }
 
   render() {
-    const { list, hasMore, isLoading } = this.props;
+    const { list, hasMore } = this.props;
 
     return (
       <div className="images">
         {this.noImages() && <div className="images__notice">No Photos Found</div>}
-        {list && <ImageGrid list={list} hasMore={hasMore && isLoading} onLoadMore={this.extendLoad} />}
+        {list && <ImageGrid list={list} hasMore={hasMore} onLoadMore={this.extendLoad} />}
       </div>
     );
   }

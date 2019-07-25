@@ -19,6 +19,7 @@ const reducer = (state = defaultState, action) => {
         ...state,
         data: [],
         isLoaded: false,
+        hasMore: true,
       };
     default:
       return remoteReducerIncremental(LOAD_IMAGES, state, action);

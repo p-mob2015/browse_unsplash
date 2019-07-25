@@ -18,5 +18,6 @@ export function* loadImages({ params }) {
     }
   } catch (error) {
     yield put({ type: `${LOAD_IMAGES}_FAILURE`, error });
+    yield put({ type: SET_IMAGES_HAS_MORE, hasMore: false });
   }
 }
